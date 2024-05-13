@@ -38,8 +38,8 @@ class Abonent
         OurAbonent.ActivationDate = DateTime.Parse(sActivationDate);
         OurAbonent.HasInternet = keyHasInternet.Key == ConsoleKey.Y ? true : false;
         OurAbonent.HasDigitalTV = keyHasDigitalTV.Key == ConsoleKey.Y ? true : false;
-
         TimeSpan timeExistence = OurAbonent.GetTimeExistence();
+
         Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine();
         Console.WriteLine("_______________________________________________");
